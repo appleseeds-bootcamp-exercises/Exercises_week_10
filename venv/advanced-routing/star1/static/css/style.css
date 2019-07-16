@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+img{
+    border: 5px solid #aaaaaa;
+    display: block;
+    height: 200px;
+    width: 300px;
+    margin: auto;
+}
+html{
+    background-color:#cccccc;
+}

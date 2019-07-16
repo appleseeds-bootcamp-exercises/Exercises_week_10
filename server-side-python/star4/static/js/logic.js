@@ -1,7 +1,7 @@
 const getImages = () => {
     $.ajax({
         type: "GET",
-        url: "get_images",
+        url: "http://localhost:7000/get_images",
         data: {
         },
         dataType: "json",
@@ -9,7 +9,7 @@ const getImages = () => {
             showImages(responsemsg);
         },
         error: function (msg) {
-            console.log("error");
+            console.log("ersror");
         },
     });
 }
