@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>
+    New User? Signup here
+</h1>
+<form method="POST" action="/log_in_attempt" id='loginForm'>
+    <label for="firstName"></label>
+    <input name='firstName'>
+    <label for="lastName"></label>
+    <input name='lastName'>
+    <button id='submitLogin'>Signup</button>
+</form> 
+{% endblock %}

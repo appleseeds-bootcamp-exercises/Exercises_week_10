@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>
+    Welcome {{first_name}}
+</h1>
+<h3>
+    We are very happy to greet you {{first_name}} {{last_name}}
+</h3>
+<h3>
+    Congrasulations {{first_name}} You won the lottery! in order to get the prize you need to
+</h3>
+<ul>
+    {%  if is_winner %}
+    <li>send us an email to lottery@gmail.com</li>
+    <li>Attach to the email a picture of yourself writing code</li>
+
+    {% else %}
+    <li>Fill in our winners form in http://hitechlottery.com/form</li>
+    {% endif %}
+    <li>Wait for a reply</li>
+</ul>
+{% endblock %}
